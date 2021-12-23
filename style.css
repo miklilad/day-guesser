@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.guess-date, .guess-prompt {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+}
+
+.guess-prompt {
+    font-size: 3em;
+}
+
+.guess-date {
+    font-size: 5em;
+}
+
+.buttons {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.results {
+    padding-top: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 530px) {
+    .guess-prompt {
+        font-size: 1.5em;
+    }
+
+    .guess-date {
+        font-size: 3em;
+    }
+}
